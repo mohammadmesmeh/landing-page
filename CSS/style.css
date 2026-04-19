@@ -624,15 +624,22 @@ h3 {
 
   gap: 15px;
   width: 500px;
-  min-width: 300px;
+  
 }
 
 @media (max-width:768px) {
 
   .contact-wrapper {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  
+.contact-form{
+    width: 300px;
+
+
+}
 }
 
 .contact-form input,
@@ -706,7 +713,6 @@ h3 {
   flex-wrap: wrap;
 }
 
-/* LEFT */
 .footer-left h3 {
   color: var(--text);
   margin-bottom: 10px;
@@ -717,7 +723,6 @@ h3 {
   max-width: 300px;
 }
 
-/* LINKS */
 .footer-links,
 .footer-socials {
   display: flex;
@@ -738,7 +743,6 @@ h3 {
   transform: translateX(5px);
 }
 
-/* BOTTOM */
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
